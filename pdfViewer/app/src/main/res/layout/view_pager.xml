@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/top_info_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/page_text_main_title"
+            android:textColor="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:hint=""/>
+
+        <ImageButton
+            android:id="@+id/page_btn_revise_title"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_edit"/>
+
+        <TextView
+            android:id="@+id/page_tv_pageNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="15sp"
+            android:gravity="end"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edTxt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="페이지 제목"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/top_info_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/edTxt_title"
+        app:layout_constraintBottom_toTopOf="@+id/edTxt_memo"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:popupTheme="@style/Widget.AppCompat.Toolbar">
+
+            <Button
+                android:id="@+id/btn_addImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorPrimary"
+                android:text="이미지 추가"
+                android:textSize="15sp"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edTxt_memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="내용"
+        android:maxLines="5"
+        android:textSize="15sp"
+        android:gravity="top"
+        android:lines="10"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

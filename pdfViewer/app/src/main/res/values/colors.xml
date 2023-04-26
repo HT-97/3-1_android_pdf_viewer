@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:name="http://schemas.android.com/apk/res-auto">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fanton">#6768AB</color>
+    <color name="fanton_up">#A7A8EB</color>
+    <color name="fanton_super_up">#F1F1FF</color>
+    <color name="text_color">#231F20</color>
+
+
+
+    <color name="colorPrimary">#2699FB</color>
+    <color name="colorAccent">#19426A</color>
+
+    <color name="colorGray1">#F5F5F5</color>
+    <color name="colorGray2">#C6C6C6</color>
+    <color name="colorGray3">#95989A</color>
+    <color name="colorGray4">#5F5C5C</color>
+
+    <color name="colorGrayTransparent">#79000000</color>
+
+</resources>
